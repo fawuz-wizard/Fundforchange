@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Post – FundForChange</title>
+    <link rel="stylesheet" href="create post css.css">
+    <script src="chat page JavaScript.js" async></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>FUNDFORCHANGE</h1>
+        <br>
+        <img src="fundforchangelogo.jpg" alt="FundForChangeLogo" width="100" height="70">
+    </header>
+
+    <!-- Create Post Section -->
+    <section class="create-post-section">
+        <h2 style="position: relative; top: -40px;"">Create a Post</h2>
+        <textarea id="postContent" placeholder="Write your post here..." maxlength="500"></textarea>
+<br>
+<br>
+        <label for="fileUpload" class="upload-btn">Attach Photo/Video (Max 30MB)</label>
+        <input type="file" id="fileUpload" class="file-input" accept="image/*, video/*">
+        <br>
+        <br>
+        <a href="FundForChange homepagehtml.html"><button id="uploadMediaBtn" class="upload-btn">Upload Media to homepage feed</button></a>
+        <a href="feedback.html"><button id="uploadMediaBtn" class="upload-btn">Upload Media to feedback</button></a>
+        <p id="fileSizeWarning"></p>
+    </section>
+
+    <!-- Bottom fixed icon section (horizontal) -->
+    <footer class="bottom-nav">
+        <div class="bottom-icon">
+            <a href="FundForChange homepagehtml.html">
+            <img src="home icon.jpg" alt="Feed">
+        </a>
+            <p>Home</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="categories page html.html">
+            <img src="categories icon.jpg" alt="Categories">
+        </a>
+            <p>Categories</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="create post html.html">
+            <img src="create post icon.jpg" alt="Create Post">
+        </a>
+            <p>Create Post</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="chat page html.html">
+            <img src="chat icon.jpg" alt="Chat">
+        </a>
+            <p>Chat</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="account page html.html">
+            <img src="account icon.jpg" alt="Account">
+        </a>
+            <p>Account</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

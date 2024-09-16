@@ -1,0 +1,93 @@
+/* Import base styles */
+@import url('FundForChange\ Homepagecss.css');
+
+/* Create Post section */
+.create-post-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Height minus the bottom nav */
+    padding: 20px;
+}
+
+.create-post-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Textarea for the post */
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+/* Word count display */
+#wordCount {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* File upload button styling */
+.upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+}
+
+/* Hide the default file input */
+.file-input {
+    display: none;
+}
+
+/* File size warning */
+#fileSizeWarning {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Bottom fixed navigation styling */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.5); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bottom-icon {
+    text-align: center;
+    color: white;
+}
+
+.bottom-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-icon p {
+    margin-top: 5px;
+    font-size: 12px;
+}

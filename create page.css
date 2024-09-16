@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-bottom: 60px;
+    border: 2px solid black;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    border: 2px solid black;
+}
+
+.logo-input {
+    margin-top: 10px;
+}
+
+/* Content posting area for account creation */
+.content-section {
+    padding: 20px;
+    overflow-y: auto;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Account creation form styles */
+.account-creation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-creation-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account-creation-form input,
+.account-creation-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.account-creation-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.account-creation-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-creation-form button:hover {
+    background-color: #45a049;
+}
+
+/* Vertical icons section */
+.vertical-icons {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid black;
+}
+
+/* Bottom fixed navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid black;
+}

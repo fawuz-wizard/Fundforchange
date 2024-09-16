@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundForChange</title>
+    <link rel="stylesheet" href="create page.css">
+    <script src="create page.js" async></script>
+</head>
+<body>
+    <!-- Header with logo input and title -->
+    <header class="header">
+        <a href="login page html.html">
+            <img src="go back.jpg" alt="Go Back" class="back-icon" style="float: left;" width="40" height="40">
+        </a>
+        <h1>FundForChange</h1>
+        <br>
+        <img src="fundforchangelogo.jpg" alt="FundForChangeLogo" width="100" height="70">
+    </header>
+
+    <!-- Content posting area for account creation -->
+    <section class="content-section">
+        <h2>Create an Account</h2>
+        <form class="account-creation-form" action="FundForChange homepagehtml.html" method="post" onsubmit="saveUserInfo()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required onfocus="showSuggestion('Enter a unique username')">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required onfocus="showSuggestion('Enter a valid email address')">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required onfocus="showSuggestion('Use at least 8 characters, including a number and a special character')">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required onfocus="showSuggestion('Re-enter your password')">
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required onfocus="showSuggestion('Enter the country you reside in')">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required onfocus="showSuggestion('Enter the city you reside in')">
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required onfocus="showSuggestion('Enter a valid contact number')">
+
+            <label for="status">Status:</label>
+            <textarea id="status" name="status" placeholder="Enter your current status" onfocus="showSuggestion('Describe your current status')"></textarea>
+
+            <label for="profile-image">Profile Image:</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*" oninput="previewImage(event)" onfocus="showSuggestion('Upload a profile picture')">
+
+            <label>
+                <input type="checkbox" id="remember-me" name="remember-me"> Remember me
+            </label>
+
+            <center><button type="submit" id="create-account">Create Account</button></center>
+        </form>
+        <p id="suggestion" style="color: grey;"></p>
+    </section>
+
+    <script>
+        function showSuggestion(message) {
+            document.getElementById('suggestion').innerText = message;
+        }
+
+        // Preview profile image and save to localStorage if 'Remember me' is checked
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                localStorage.setItem('profileImage', reader.result); // Save image in base64 format
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function saveUserInfo() {
+            if (document.getElementById('remember-me').checked) {
+                localStorage.setItem('username', document.getElementById('username').value);
+                localStorage.setItem('email', document.getElementById('email').value);
+                localStorage.setItem('country', document.getElementById('country').value);
+                localStorage.setItem('city', document.getElementById('city').value);
+                localStorage.setItem('contact', document.getElementById('contact').value);
+                localStorage.setItem('status', document.getElementById('status').value);
+            }
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('username')) {
+                document.getElementById('username').value = localStorage.getItem('username');
+                document.getElementById('email').value = localStorage.getItem('email');
+                document.getElementById('country').value = localStorage.getItem('country');
+                document.getElementById('city').value = localStorage.getItem('city');
+                document.getElementById('contact').value = localStorage.getItem('contact');
+                document.getElementById('status').value = localStorage.getItem('status');
+            }
+        }
+    </script>
+</body>
+</html>
