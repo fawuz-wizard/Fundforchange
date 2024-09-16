@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #ccc;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Prevent bottom icons from overlapping content */
+    border: 2px solid black; /* Page border */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    border: 2px solid black;
+    height: 130px;
+}
+
+/* Settings Page */
+.settings-page {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+/* Setting Options */
+.setting-option {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.setting-option label {
+    font-size: 16px;
+}
+
+.setting-option select, 
+.setting-option button, 
+.setting-option input[type="checkbox"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.setting-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Vertical Icons */
+.vertical-icons {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: grid;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-right: 5px;
+    border: 2px solid black;
+}
+
+.vertical-icons .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.vertical-icons .icon p {
+    font-size: 12px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid black;
+}
+
+.bottom-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-icon p {
+    font-size: 12px;
+    color: black;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    margin-top: 10px;
+}
+
+.social-media-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.social-media-links a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}

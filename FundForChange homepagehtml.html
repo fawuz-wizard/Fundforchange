@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundForChange</title>
+    <link rel="stylesheet" href="FundForChange Homepagecss.css">
+    <script src="FundForChange HomepageJavaScript.js" async></script>
+</head>
+<body>
+   
+    <!-- Header with logo input and title -->
+    <header class="header">
+        <h1>FundForChange</h1>
+        <br>
+        <img src="fundforchangelogo.jpg" alt="FundForChangeLogo" width="100" height="70">
+         <div class="notification-bell" onclick="toggleNotifications()">
+            <img src="notification bell.jpg" alt="Notifications" style="height: 30;" width="30">
+        </div>
+        <!-- Dropdown for Notifications -->
+        <div id="notification-dropdown" class="notification-dropdown">
+            <p style="color: black;">Ibrahim Kamara messaged you</p>
+            <p style="color: black;">John Sesay sent you a message request</p>
+            <p style="color: black;">FightMalaria SL donated to your campaign</p>
+            <p style="color: black;">Saidu Marah commented on your post</p>
+            <p style="color: black;">DisabledSupport SL liked your post</p>
+        </div>
+        <!-- Three-line menu button at the top right -->
+        <span class="menu-btn" onclick="toggleDropdown()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </span>
+        <!-- Hidden dropdown content -->
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="feedback.html">Feedback</a>
+            <a href="terms.html">Terms and conditions</a>
+            <a href="About.html">About</a>
+            <a href="How to.html">How To Use</a>
+            <a href="Setting.html">Settings</a>
+        </div>
+    </header>
+
+    <!-- Content posting area with social post templates -->
+    <section class="content-section">
+        <div class="post-area">
+            <!-- Example of a post template -->
+            <div class="post">
+                <div class="post-header">
+                    <a href="ibrahim kamara.html">
+                        <img src="disables.jpg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>Ibrahim Kamara</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+
+                </div>
+                <br>
+                <p>Hello we are disabled persons. We are not qualified to do any real sustainable jobs so our only option is to beg in the streets. Please help us many of us have families to feed. Any little donation will be much appreciated. We beg around cotton tree. You can make a donation using the link thank you</p>
+                <br>
+                <div class="post-media">
+                    <img src="disables.jpg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons"></div>
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                  <a href="chat page html.html"> <button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="John Sesay.html">
+                        <img src="mudslide victim.jpg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>John Sesay</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>My name is John Sesay. My whole life was rendered meaningless when a mudslide killed my whole family while i was in the hinterland. I have nothing i am nothing please help me rebuild my life. The link for donation is attached below. God bless you.</p>
+                <br>
+                <div class="post-media">
+                    <img src="mudslide victim.jpg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons">
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                   <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="fightmalaria.html">
+                        <img src="tents.jpeg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>FightMalaria.org</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>We are a non govermental organization dedicated to the fight against malaria. We will be donating free tents on october 3, 12 noon at kissy community. Come get yours and protect yourself against malaria. For more information reach us on our toll free line 772.</p>
+                <br>
+                <div class="post-media">
+                    <img src="tents.jpeg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons">
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                   <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="disabled support.html">
+                        <img src="wheelchairs.jpeg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>DisabledSupport SL</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>We are a startup non govermental organization with the aim of assisting all the disables we can in Freetown. We recieved a shipment of wheelchairs from donors and we want to share them out. You can drop by our office at 21 stevens street and collect yours for free.</p>
+                <br>
+                <div class="post-media">
+                    <img src="wheelchairs.jpeg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons"></div>
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="art funding.html">
+                        <img src="art funding.jpg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>Abubakarr Kamara</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>I am Abubakarr Kamara. I do artistic photos. I have a dream of going international with my art. If you are an art lover please help my cause. Donation link attached below</p>
+                <br>
+                <div class="post-media">
+                    <img src="art funding.jpg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons">
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                   <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="homeless.html">
+                        <img src="homeless man.jpg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>Ishmael Bah</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>I am requesting help from donors on this platform. I have been homeless for two years now. I had to quit my education and other ambitions. I have no family members to rely on. Please help me</p>
+                <br>
+                <div class="post-media">
+                    <img src="homeless man.jpg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons"></div>
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                   <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="post">
+                <div class="post-header">
+                    <a href="football.html">
+                        <img src="footballer boys.jpg" alt="Account Icon" class="account-icon">
+                    </a>
+                    <p>John Sesay</p>
+                    <a href="donate.html" class="donate-btn">Donate Now</a>
+                </div>
+                <br>
+                <p>These are my sons. They play for parade u-15 and are the best players in the team. I believe they are talented to be future superstars on the biggest stage. You can come scout them yourself during community competitions. I am pleading to scouts or donors please help fund my children to play football in europe.</p>
+                <br>
+                <div class="post-media">
+                    <img src="footballer boys.jpg" alt="Uploaded Image">
+                </div>
+                <br>
+                <br>
+                <div class="action-buttons">
+                    <!-- Like Button -->
+                    <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                
+                    <!-- Comment Button (Opens Comment Section) -->
+                    <button class="comment-btn" onclick="toggleCommentSection()">Comment</button>
+                
+                    <!-- Message Button (Navigates to Chat Section) -->
+                   <!-- Message Button (Navigates to Chat Section) -->
+                   <a href="chat page html.html"><button class="message-btn">Chat</button></a>
+
+                </div>
+                
+                <!-- Comment Section (Initially hidden) -->
+                <div class="comment-section" id="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+                    <button class="submit-comment" onclick="submitComment()">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom fixed icon section (horizontal) -->
+    <footer class="bottom-nav">
+        <div class="bottom-icon">
+            <a href="FundForChange homepagehtml.html">
+                <img src="home icon.jpg" alt="Home">
+            </a>
+            <p>Home</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="categories page html.html">
+                <img src="categories icon.jpg" alt="Categories">
+            </a>
+            <p>Categories</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="create post html.html">
+                <img src="create post icon.jpg" alt="Create Post">
+            </a>
+            <p>Create Post</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="chat page html.html">
+                <img src="chat icon.jpg" alt="Chat">
+            </a>
+            <p>Chat</p>
+        </div>
+        <div class="bottom-icon">
+            <a href="account page html.html">
+                <img src="account icon.jpg" alt="Account">
+            </a>
+            <p>Account</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

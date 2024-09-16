@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="Setting.css">
+    <script src="Setting.js" async></script>
+</head>
+<body>
+
+<!-- Header with logo input and title -->
+<header class="header">
+    <a href="FundForChange homepagehtml.html">
+        <img src="go back.jpg" alt="Go Back" class="back-icon" style="position:relative; top: -15px; float:left;" width="40" height="40">
+    </a>
+    <h1 style="position:relative; top: -20px;">FundForChange - Settings</h1>
+    <br>
+    <img src="fundforchangelogo.jpg" alt="FundForChangeLogo" width="100" height="70" style="position:relative; top: -40px;">
+</header>
+
+<div class="settings-page content-section">
+   <center><h1>Settings</h1></center>
+
+    <div class="setting-option">
+        <label for="filter-feed">Filter Feed:</label>
+        <select id="filter-feed">
+            <option value="recent">Recent</option>
+            <option value="old">Old</option>
+            <option value="trending">Trending</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="message-preference">Who can message you:</label>
+        <select id="message-preference">
+            <option value="anyone">Anyone</option>
+            <option value="verify">Verify Chat Requests</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="platform-status">Platform Status:</label>
+        <select id="platform-status">
+            <option value="donor">Donor</option>
+            <option value="aid-seeker">Aid Seeker</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="language">Language:</label>
+        <select id="language">
+            <option value="english">English</option>
+            <option value="krio">Krio</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="contact">Change Email/Phone:</label>
+        <button id="contact-button">Change</button>
+    </div>
+
+    <div class="setting-option">
+        <label for="password">Change Password:</label>
+        <button id="password-button">Change</button>
+    </div>
+
+    <div class="setting-option">
+        <label for="donation-alerts">Donation Alerts:</label>
+        <input type="checkbox" id="donation-alerts">
+    </div>
+
+    <div class="setting-option">
+        <label for="comment-alerts">Comment Alerts:</label>
+        <input type="checkbox" id="comment-alerts">
+    </div>
+
+    <div class="setting-option">
+        <label for="font-settings">Font Settings:</label>
+        <select id="font-settings">
+            <option value="default">Default</option>
+            <option value="serif">Serif</option>
+            <option value="sans-serif">Sans-serif</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="blocked-profiles">Blocked Profiles:</label>
+        <button id="blocked-profiles-button">Manage</button>
+    </div>
+
+    <div class="setting-option">
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method">
+            <option value="afrimoney">AfriMoney</option>
+            <option value="orangemoney">Orange Money</option>
+            <option value="qmoney">QMoney</option>
+            <option value="gtbank">gtbank</option>
+            <option value="slcm">slcmb</option>
+            <option value="uba">uba</option>
+            <option value="rokel commercial bank">rokel commercial bank</option>
+        </select>
+    </div>
+
+    <div class="setting-option">
+        <label for="social-media">Social Media Connections:</label>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook" width 500" height="333"></a>
+            <a href="https://wa.me" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp" width 500" height="333"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram" width 500" height="333"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.jpg" alt="Twitter" width 500" height="333"></a>
+            <a href="https://telegram.org" target="_blank"><img src="telegram-icon.png" alt="Telegram" width 500" height="333" ></a>
+        </div>
+    </div>
+    
+</div>
+<script src="Setting.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    padding-bottom: 60px; /* To prevent bottom icons overlapping content */
+    border: 2px solid black; /* Page border */
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    border: 2px solid black; /* Page border */
+}
+
+/* Terms and Conditions Styling */
+.terms-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+}
+
+.terms-title {
+    color: blue;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.terms-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.terms-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.agree, .disagree {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.agree {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.disagree {
+    background-color: #f44336;
+    color: white;
+}
